@@ -1,0 +1,157 @@
+<!doctypehtml>
+<html>
+	<head>
+	<style>
+	body
+ 
+ {
+	background-image:url('C.jpg');
+	background-repeat:no-repeat;
+	background-size:2000px 1000px;
+ } 
+	.box {
+        /* basic styling */
+ 
+        width: 750px;
+        height: 95px;
+        border: 0px solid #555;
+        border-radius: 5px;
+        padding: 0px;
+        margin-left: 10%;
+        text-align: center;
+ 
+        box-shadow: 4px 4px 4px #aaa;
+        
+        /* flexbox setup */
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+      
+        display: -moz-box;
+ 
+        -moz-box-orient: horizontal;
+      
+        display: box;
+        box-orient: horizontal;
+	}
+	a{
+        display: inline-block;
+        vertical-align: middle;
+ 
+        line-height: normal;
+        font-family: 'Tangerine', serif;
+		font-size: 38px;
+		text-shadow: 4px 4px 4px #fff;
+        text-decoration:none;
+	}
+ 
+	.box > div {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+      
+        -moz-transition: width 0.9s ease-out;
+        -o-transition: width 0.9s ease-out;
+ 
+        -webkit-transition: width 0.9s ease-out;
+        transition: width 0.9s ease-out;
+    }
+      
+      /* our colors */
+		.box > div:nth-child(1){ background: #B0C4DE ; /* Old browsers */
+ 
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+      
+		.box > div:nth-child(1):hover{ box-shadow: 6px 4px 6px #B0C4DE ; }
+      
+      
+		.box > div:nth-child(2){ background: #B0C4DE ; /* Old browsers */
+		
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+  
+		.box > div:nth-child(2):hover{ box-shadow: 6px 4px 6px #B0C4DE; }      
+       
+      
+		.box > div:nth-child(3){ background: #B0C4DE ; /* Old browsers */
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+      
+		.box > div:nth-child(3):hover{ box-shadow: 6px 4px 6px #B0C4DE ; }
+      
+      
+		.box > div:nth-child(4){ background: #B0C4DE ; /* Old browsers */ 
+		
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+		
+		.box > div:nth-child(4):hover{ box-shadow: 6px 4px 6px #B0C4DE ; }		
+		
+     
+	</style>
+	
+	<body>
+	
+	<div align="center">
+    <div class="box">
+		<div><a href="WebPage_2.html">Home</a></div>
+		<div><a href="About_Us.html">About Us</a></div>
+		<div><a href="Leaderboard_1.html">Leaderboard</a></div>
+		<div><a href="Members.html">Members</a></div>
+				
+    </div>
+	
+	<div style="opacity:0;Left:530px;width:285px;height:100px;background-color:#ffffff">
+		</div>
+	
+    <div class="box">
+	<div style="opacity:2;position:center;left:120px;width:1000px;height:700px;background-color:#FFFFFF">
+	<div align="Center">
+	<h1> MEMBERS </h1>
+	<p> Gabi Davenport</p>
+	<p> Mitch Drake</p>
+	<p> Chris Pimentel</p>
+	<p> Dantae Kellybrew</p>
+	<p> Chris Mendez</p>
+	<p> Eric Tran</p>
+	<p> Raul Ramirez</p>
+	</div>
+	</div>
+	</div>
+	</body>

@@ -1,0 +1,195 @@
+<html>
+<head>
+<style>
+body
+ 
+ {
+	background-image:url('C.jpg');
+	background-repeat:no-repeat;
+	background-size:2000px 1000px;
+ } 
+	.box {
+        /* basic styling */
+ 
+        width: 750px;
+        height: 95px;
+        border: 0px solid #555;
+        border-radius: 5px;
+        padding: 0px;
+        margin-left: 10%;
+        text-align: center;
+ 
+        box-shadow: 4px 4px 4px #aaa;
+        
+        /* flexbox setup */
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+      
+        display: -moz-box;
+ 
+        -moz-box-orient: horizontal;
+      
+        display: box;
+        box-orient: horizontal;
+	}
+	a{
+        display: inline-block;
+        vertical-align: middle;
+ 
+        line-height: normal;
+        font-family: 'Tangerine', serif;
+		font-size: 38px;
+		text-shadow: 4px 4px 4px #fff;
+        text-decoration:none;
+	}
+ 
+	.box > div {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+      
+        -moz-transition: width 0.9s ease-out;
+        -o-transition: width 0.9s ease-out;
+ 
+        -webkit-transition: width 0.9s ease-out;
+        transition: width 0.9s ease-out;
+    }
+      
+      /* our colors */
+		.box > div:nth-child(1){ background: #B0C4DE ; /* Old browsers */
+ 
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+      
+		.box > div:nth-child(1):hover{ box-shadow: 6px 4px 6px #B0C4DE ; }
+      
+      
+		.box > div:nth-child(2){ background: #B0C4DE ; /* Old browsers */
+		
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+  
+		.box > div:nth-child(2):hover{ box-shadow: 6px 4px 6px #B0C4DE; }      
+       
+      
+		.box > div:nth-child(3){ background: #B0C4DE ; /* Old browsers */
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+      
+		.box > div:nth-child(3):hover{ box-shadow: 6px 4px 6px #B0C4DE ; }
+      
+      
+		.box > div:nth-child(4){ background: #B0C4DE ; /* Old browsers */ 
+		
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+		
+		.box > div:nth-child(4):hover{ box-shadow: 6px 4px 6px #B0C4DE ; }		
+		
+     
+	</style>
+</head>
+<body>
+	
+	<div align=center>
+	<form method="POST" action="WebPage_2.html" onsubmit="return checkForm(this);">
+		<p>Username: <input type="text" id='suser' name="username" placeholder="Username"></p>
+		<p>Password: <input type="password" id='spass' name="pwd1" placeholder="Password"></p>
+		<p>Confirm Password: <input type="password" name="pwd2" placeholder="Password"></p> 
+		<p><input type=submit value=Create onclick="store()"></p> 
+	</form>
+	
+		
+		<div id = 'tar'></div>
+		</div>
+		</div>
+		<script>						
+			var db = { 'noname' : 'noval' };
+			
+			if(localStorage.db){
+				//localStorage simulates server database
+				db = JSON.parse(localStorage.db);
+			}
+				
+			var tar = document.getElementById('tar');
+			
+ 
+		
+			tar.innerHTML = string;
+			
+			function store(){
+				//would be AJAX call to server to store data
+				var user = document.getElementById('suser').value;
+				var pass = document.getElementById('spass').value;
+				
+				db[user] = pass;
+				
+				localStorage.db = JSON.stringify(db);
+				
+				console.log(localStorage);
+			}
+			
+			function checkForm(form) { 
+				 if(form.username.value == "") { alert("Error: Username cannot be blank!"); 
+				 form.username.focus(); return false;
+			 } 
+				e = /^\w+$/; if(!re.test(form.username.value)) {
+				alert("Error: Username must contain only letters, numbers and underscores!");
+				form.username.focus();
+				return false; 
+			 }
+				if(form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) {
+				if(!checkPassword(form.pwd1.value)) {
+				alert("The password you have entered is not valid!");
+				form.pwd1.focus(); return false; 
+			 } 
+			 } 
+				else { 
+				alert("Error: Please check that you've entered and confirmed your password!");
+				form.pwd1.focus(); 
+				return false;
+			 }
+				return true;
+			 } 
+		
+		
+		</script>
+		</div>
+		</body>
+</html>

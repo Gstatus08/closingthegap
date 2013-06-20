@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+ 
+ {
+	background-image:url('C.jpg');
+	background-repeat:no-repeat;
+	background-size:2000px 1000px;
+ } 
+	.box {
+        /* basic styling */
+ 
+        width: 750px;
+        height: 95px;
+        border: 0px solid #555;
+        border-radius: 5px;
+        padding: 0px;
+        margin-left: 10%;
+        text-align: center;
+ 
+        box-shadow: 4px 4px 4px #aaa;
+        
+        /* flexbox setup */
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+      
+        display: -moz-box;
+ 
+        -moz-box-orient: horizontal;
+      
+        display: box;
+        box-orient: horizontal;
+	}
+	a{
+        display: inline-block;
+        vertical-align: middle;
+ 
+        line-height: normal;
+        font-family: 'Tangerine', serif;
+		font-size: 38px;
+		text-shadow: 4px 4px 4px #fff;
+        text-decoration:none;
+	}
+ 
+	.box > div {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+      
+        -moz-transition: width 0.9s ease-out;
+        -o-transition: width 0.9s ease-out;
+ 
+        -webkit-transition: width 0.9s ease-out;
+        transition: width 0.9s ease-out;
+    }
+      
+      /* our colors */
+		.box > div:nth-child(1){ background: #B0C4DE ; /* Old browsers */
+ 
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+      
+		.box > div:nth-child(1):hover{ box-shadow: 6px 4px 6px #B0C4DE ; }
+      
+      
+		.box > div:nth-child(2){ background: #B0C4DE ; /* Old browsers */
+		
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+  
+		.box > div:nth-child(2):hover{ box-shadow: 6px 4px 6px #B0C4DE; }      
+       
+      
+		.box > div:nth-child(3){ background: #B0C4DE ; /* Old browsers */
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+      
+		.box > div:nth-child(3):hover{ box-shadow: 6px 4px 6px #B0C4DE ; }
+      
+      
+		.box > div:nth-child(4){ background: #B0C4DE ; /* Old browsers */ 
+		
+		background: -moz-linear-gradient(top, #B0C4DE  0%, #B0C4DE  100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0C4DE ), color-stop(100%,#B0C4DE )); /* Chrome,Safari4+ */
+ 
+		background: -webkit-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #B0C4DE  0%,#B0C4DE  100%); /* IE10+ */
+ 
+		background: linear-gradient(to bottom, #B0C4DE  0%,#B0C4DE  100%); /* W3C */
+		border: 2px solid #555;
+        font: 14px Arial;
+        border-radius: 5px; }
+		
+		.box > div:nth-child(4):hover{ box-shadow: 6px 4px 6px #B0C4DE ; }		
+		
+     
+</style>
+</head>
+
+<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #00008B;">
+<body style="backgroundhttp://www.pptclipart.com/download/bulletin-board-education-powerpoint-template.jpg;">
+<body style="background-color:white;">
+
+
+
+<div style="font-family:verdana;padding:20px;border-radius:20px;border:30px solid #B0C4DE;">
+<h1 style="background-color:#6495ED;text-align:center;">CLOSING THE GAP</h1>
+<div align="center">
+    <div class="box">
+		<div><a href="WebPage_2.html">Home</a></div>
+		<div><a href="About_Us.html">About Us</a></div>
+		<div><a href="Leaderboard_1.html">Leaderboard</a></div>
+		<div><a href="Members.html">Members</a></div>
+				
+    </div>
+<p style="background-color:orange;text-align:center;">SUPPLEMENTAL ONLINE EDUCATION AND TUTORING</p>
+
+<h2>Leaderboard</h2>
+
+<div style="opacity:1;Left:530px;width:284px;height:220px;background-color:#ffffff">
+<table border="1">
+<tr>
+  <td colspan="1" style="background-color:#FFA500;text-align:center;">
+	RANK</td>
+	<td colspan="1" style="background-color:#FFA500;text-align:center;">
+	NAME</td>
+	<td colspan="1" style="background-color:#FFA500;text-align:center;">
+	SCORE</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Gaby Davenport</td>
+  <td>600</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>Mitch Drake</td>
+  <td>600</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>Chris Mendez</td>
+  <td>600</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>Devontae Kellybrew</td>
+  <td>600</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>Chris Pimentel</td>
+  <td>600</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>Eric Tran</td>
+  <td>600</td>
+  <tr>
+  <td>7</td>
+  <td>Raul Ramirez</td>
+  <td>600</td>
+</tr>
+</tr>
+</table>
+</div>
+
+
+
+<div attribute="align=left">
+ <a id="tips">Useful Tips Section</a> 
+<p style="background-color:orange;text-align:center;">Teaching Our Future</p>
+</div>
+
+
+</body>
+</html>

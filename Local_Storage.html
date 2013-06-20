@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		User:<input type=text id='cuser'><br />
+		Pass:<input type=text id='cpass'><br />
+		<input type=button value="Check" onclick="check()">
+		<br>
+		User:<input type=text id='suser'><br />
+		Pass:<input type=text id='spass'><br />
+		<input type=button value="Save" onclick="store()">
+		<br>
+		<div id = 'tar'></div>
+		<script>						
+			var db = { 'noname' : 'noval' };
+			
+			if(localStorage.db){
+				//localStorage simulates server database
+				db = JSON.parse(localStorage.db);
+			}
+			
+			var tar = document.getElementById('tar');
+			var string = "User Pass/Score<br>";
+ 
+			for(var u in db){
+				string += u+" "+db[u]+"<br>";
+			}
+			
+			tar.innerHTML = string;
+			
+			function check(){
+				//in real situation, would be AJAX call to server to check data
+				var user = document.getElementById('cuser').value;
+				var pass = document.getElementById('cpass').value;
+				
+				if(db[user] == pass){
+					alert("Press OK to Continue");
+				} else {
+					alert("Fail");
+				}
+			}
+			
+			function store(){
+				//would be AJAX call to server to store data
+				var user = document.getElementById('suser').value;
+				var pass = document.getElementById('spass').value;
+				
+				db[user] = pass;
+				
+				localStorage.db = JSON.stringify(db);
+				
+				console.log(localStorage);
+			}
+		</script>
+	</body>
+</html>
